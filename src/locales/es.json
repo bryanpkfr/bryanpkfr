@@ -1,0 +1,202 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "web": "Desarrollo Web",
+    "parkour": "Parkour",
+    "video": "Edición",
+    "contact": "Contacto"
+  },
+  "home": {
+    "hero": {
+      "title": "Landing Pages de Alta Conversión para Pequeños Negocios",
+      "subtitle": "Construidas con la misma disciplina, progresión y eficiencia que uso como atleta profesional de parkour",
+      "cta": "Obtén tu landing page",
+      "ctaSecondary": "Ver más servicios"
+    },
+    "services": {
+      "title": "Landing Page Express",
+      "subtitle": "Páginas diseñadas para convertir visitantes en clientes",
+      "features": {
+        "onePage": {
+          "title": "Una sola página",
+          "description": "Enfocada en una acción: convertir"
+        },
+        "mobile": {
+          "title": "Mobile-first",
+          "description": "Optimizada para dispositivos móviles"
+        },
+        "whatsapp": {
+          "title": "Integración WhatsApp",
+          "description": "Conecta directamente con tus clientes"
+        },
+        "fast": {
+          "title": "Entrega rápida",
+          "description": "Lista en días, no semanas"
+        },
+        "convert": {
+          "title": "Diseñada para convertir",
+          "description": "Optimizada para generar leads y ventas"
+        },
+        "simple": {
+          "title": "Simple y efectiva",
+          "description": "Sin complicaciones, solo resultados"
+        }
+      },
+      "cta": "Solicita tu landing page"
+    },
+    "why": {
+      "title": "Por qué trabajar conmigo",
+      "mindset": {
+        "title": "Mentalidad de atleta",
+        "description": "Consistencia, ejecución y progresión constante en cada proyecto"
+      },
+      "simple": {
+        "title": "Soluciones simples",
+        "description": "Prefiero páginas efectivas sobre sitios web complejos"
+      },
+      "results": {
+        "title": "Enfoque en resultados",
+        "description": "No solo diseño bonito, sino herramientas que generan clientes"
+      }
+    }
+  },
+  "web": {
+    "hero": {
+      "title": "Desarrollo Web",
+      "subtitle": "Soluciones digitales simples, efectivas y orientadas a resultados",
+      "description": "Creo sitios web y aplicaciones que realmente funcionan. Sin complicaciones innecesarias, solo código limpio y resultados medibles."
+    },
+    "services": {
+      "title": "Servicios de Desarrollo Web",
+      "landing": {
+        "title": "Landing Pages",
+        "description": "Páginas de alta conversión para captar leads y ventas"
+      },
+      "websites": {
+        "title": "Sitios Web",
+        "description": "Páginas web completas y profesionales para tu negocio"
+      },
+      "apps": {
+        "title": "Aplicaciones Web",
+        "description": "Aplicaciones personalizadas según tus necesidades"
+      },
+      "maintenance": {
+        "title": "Mantenimiento",
+        "description": "Soporte continuo para mantener tu sitio actualizado"
+      }
+    },
+    "approach": {
+      "title": "Mi Enfoque",
+      "simple": {
+        "title": "Simplicidad",
+        "description": "Menos es más. Soluciones directas que funcionan"
+      },
+      "performance": {
+        "title": "Rendimiento",
+        "description": "Sitios rápidos y optimizados para la mejor experiencia"
+      },
+      "results": {
+        "title": "Resultados",
+        "description": "Cada línea de código tiene un propósito claro"
+      }
+    }
+  },
+  "parkour": {
+    "hero": {
+      "title": "Atleta de Parkour & Coach",
+      "subtitle": "Disciplina, progresión y eficiencia aplicadas a la vida"
+    },
+    "about": {
+      "title": "Sobre mí",
+      "description": "Soy Bryan Neculfilo, atleta profesional de parkour con años de experiencia compitiendo en los más altos niveles. Combino la disciplina y eficiencia del parkour con el desarrollo web para crear soluciones digitales simples, efectivas y orientadas a resultados.",
+      "coach": "Como coach, enseño parkour a otros, compartiendo no solo técnicas, sino también la mentalidad de progresión constante. Tengo la visión a largo plazo de construir un gimnasio dedicado a esta disciplina."
+    },
+    "achievements": {
+      "title": "Logros en Competencias",
+      "leyendas": {
+        "title": "Leyendas del Trazo",
+        "description": "Finalista en Skills y Velocidad"
+      },
+      "lagos": {
+        "title": "Los Lagos 2019",
+        "description": "1er lugar en Velocidad"
+      },
+      "imperial": {
+        "title": "Jam Imperial-Villarrica 2020",
+        "description": "3er puesto general"
+      }
+    },
+    "philosophy": {
+      "title": "Filosofía",
+      "discipline": {
+        "title": "Disciplina",
+        "description": "La consistencia diaria es la base del progreso"
+      },
+      "progression": {
+        "title": "Progresión",
+        "description": "Cada entrenamiento es un paso hacia adelante"
+      },
+      "efficiency": {
+        "title": "Eficiencia",
+        "description": "Movimientos precisos, sin desperdicio de energía"
+      }
+    }
+  },
+  "video": {
+    "hero": {
+      "title": "Edición de Video",
+      "subtitle": "Contenido visual que conecta y convierte",
+      "description": "Creo videos que cuentan historias y generan impacto. Desde contenido para redes sociales hasta videos promocionales, cada proyecto está diseñado para alcanzar tu audiencia."
+    },
+    "services": {
+      "title": "Servicios de Edición",
+      "social": {
+        "title": "Contenido Social",
+        "description": "Videos optimizados para Instagram, TikTok, YouTube y más"
+      },
+      "promotional": {
+        "title": "Videos Promocionales",
+        "description": "Contenido que presenta tu negocio de forma profesional"
+      },
+      "athletic": {
+        "title": "Contenido Deportivo",
+        "description": "Edición de videos de parkour y deportes extremos"
+      },
+      "corporate": {
+        "title": "Videos Corporativos",
+        "description": "Contenido profesional para empresas"
+      }
+    },
+    "style": {
+      "title": "Mi Estilo",
+      "dynamic": {
+        "title": "Dinámico",
+        "description": "Edición que mantiene la atención del espectador"
+      },
+      "clean": {
+        "title": "Limpio",
+        "description": "Estética moderna sin sobrecargar"
+      },
+      "purpose": {
+        "title": "Con propósito",
+        "description": "Cada corte y efecto tiene una razón"
+      }
+    }
+  },
+  "contact": {
+    "title": "¿Listo para trabajar juntos?",
+    "description": "Hablemos sobre tu proyecto",
+    "name": "Nombre",
+    "email": "Correo",
+    "message": "Cuéntame sobre tu proyecto",
+    "send": "Enviar mensaje",
+    "sending": "Enviando...",
+    "success": "¡Mensaje enviado! Te contactaré pronto.",
+    "error": "Error al enviar. Por favor intenta de nuevo.",
+    "whatsapp": "O contáctame por WhatsApp",
+    "whatsappButton": "Hablar por WhatsApp"
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados"
+  }
+}

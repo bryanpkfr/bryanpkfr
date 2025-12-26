@@ -1,0 +1,202 @@
+{
+  "nav": {
+    "home": "Home",
+    "web": "Web Development",
+    "parkour": "Parkour",
+    "video": "Video Editing",
+    "contact": "Contact"
+  },
+  "home": {
+    "hero": {
+      "title": "High-Converting Landing Pages for Small Businesses",
+      "subtitle": "Built with the same discipline, progression, and efficiency I use as a professional parkour athlete",
+      "cta": "Get your landing page",
+      "ctaSecondary": "View more services"
+    },
+    "services": {
+      "title": "Landing Page Express",
+      "subtitle": "Pages designed to convert visitors into clients",
+      "features": {
+        "onePage": {
+          "title": "One-page website",
+          "description": "Focused on one action: convert"
+        },
+        "mobile": {
+          "title": "Mobile-first",
+          "description": "Optimized for mobile devices"
+        },
+        "whatsapp": {
+          "title": "WhatsApp integration",
+          "description": "Connect directly with your clients"
+        },
+        "fast": {
+          "title": "Fast delivery",
+          "description": "Ready in days, not weeks"
+        },
+        "convert": {
+          "title": "Designed to convert",
+          "description": "Optimized to generate leads and sales"
+        },
+        "simple": {
+          "title": "Simple and effective",
+          "description": "No complications, just results"
+        }
+      },
+      "cta": "Request your landing page"
+    },
+    "why": {
+      "title": "Why work with me",
+      "mindset": {
+        "title": "Athlete mindset",
+        "description": "Consistency, execution, and constant progression in every project"
+      },
+      "simple": {
+        "title": "Simple solutions",
+        "description": "I prefer effective pages over complex websites"
+      },
+      "results": {
+        "title": "Results-focused",
+        "description": "Not just pretty design, but tools that generate clients"
+      }
+    }
+  },
+  "web": {
+    "hero": {
+      "title": "Web Development",
+      "subtitle": "Simple, effective, and results-oriented digital solutions",
+      "description": "I create websites and applications that actually work. No unnecessary complications, just clean code and measurable results."
+    },
+    "services": {
+      "title": "Web Development Services",
+      "landing": {
+        "title": "Landing Pages",
+        "description": "High-converting pages to capture leads and sales"
+      },
+      "websites": {
+        "title": "Websites",
+        "description": "Complete and professional websites for your business"
+      },
+      "apps": {
+        "title": "Web Applications",
+        "description": "Custom applications tailored to your needs"
+      },
+      "maintenance": {
+        "title": "Maintenance",
+        "description": "Ongoing support to keep your site updated"
+      }
+    },
+    "approach": {
+      "title": "My Approach",
+      "simple": {
+        "title": "Simplicity",
+        "description": "Less is more. Direct solutions that work"
+      },
+      "performance": {
+        "title": "Performance",
+        "description": "Fast and optimized sites for the best experience"
+      },
+      "results": {
+        "title": "Results",
+        "description": "Every line of code has a clear purpose"
+      }
+    }
+  },
+  "parkour": {
+    "hero": {
+      "title": "Parkour Athlete & Coach",
+      "subtitle": "Discipline, progression, and efficiency applied to life"
+    },
+    "about": {
+      "title": "About me",
+      "description": "I'm Bryan Neculfilo, a professional parkour athlete with years of experience competing at the highest levels. I combine parkour discipline and efficiency with web development to create simple, effective, and results-oriented digital solutions.",
+      "coach": "As a coach, I teach parkour to others, sharing not only techniques but also the mindset of constant progression. I have the long-term vision of building a gym dedicated to this discipline."
+    },
+    "achievements": {
+      "title": "Competition Achievements",
+      "leyendas": {
+        "title": "Leyendas del Trazo",
+        "description": "Finalist in Skills and Speed"
+      },
+      "lagos": {
+        "title": "Los Lagos 2019",
+        "description": "1st place in Speed"
+      },
+      "imperial": {
+        "title": "Jam Imperial-Villarrica 2020",
+        "description": "3rd place overall"
+      }
+    },
+    "philosophy": {
+      "title": "Philosophy",
+      "discipline": {
+        "title": "Discipline",
+        "description": "Daily consistency is the foundation of progress"
+      },
+      "progression": {
+        "title": "Progression",
+        "description": "Every training session is a step forward"
+      },
+      "efficiency": {
+        "title": "Efficiency",
+        "description": "Precise movements, no wasted energy"
+      }
+    }
+  },
+  "video": {
+    "hero": {
+      "title": "Video Editing",
+      "subtitle": "Visual content that connects and converts",
+      "description": "I create videos that tell stories and generate impact. From social media content to promotional videos, every project is designed to reach your audience."
+    },
+    "services": {
+      "title": "Editing Services",
+      "social": {
+        "title": "Social Content",
+        "description": "Videos optimized for Instagram, TikTok, YouTube and more"
+      },
+      "promotional": {
+        "title": "Promotional Videos",
+        "description": "Content that presents your business professionally"
+      },
+      "athletic": {
+        "title": "Sports Content",
+        "description": "Editing parkour and extreme sports videos"
+      },
+      "corporate": {
+        "title": "Corporate Videos",
+        "description": "Professional content for businesses"
+      }
+    },
+    "style": {
+      "title": "My Style",
+      "dynamic": {
+        "title": "Dynamic",
+        "description": "Editing that keeps the viewer's attention"
+      },
+      "clean": {
+        "title": "Clean",
+        "description": "Modern aesthetic without overloading"
+      },
+      "purpose": {
+        "title": "Purposeful",
+        "description": "Every cut and effect has a reason"
+      }
+    }
+  },
+  "contact": {
+    "title": "Ready to work together?",
+    "description": "Let's talk about your project",
+    "name": "Name",
+    "email": "Email",
+    "message": "Tell me about your project",
+    "send": "Send message",
+    "sending": "Sending...",
+    "success": "Message sent! I'll contact you soon.",
+    "error": "Error sending. Please try again.",
+    "whatsapp": "Or contact me on WhatsApp",
+    "whatsappButton": "Chat on WhatsApp"
+  },
+  "footer": {
+    "rights": "All rights reserved"
+  }
+}
