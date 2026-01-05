@@ -1,0 +1,3 @@
+# Esta carpeta contiene archivos estáticos que se copian directamente al build
+# Las imágenes aquí son accesibles desde la raíz: /images/nombre.jpg
+

@@ -1,109 +1,114 @@
-# Bryan Neculfilo - Professional Website
+# Bryan Neculfilo - Portfolio
 
-Página web profesional enfocada en la venta de landing pages de alta conversión para pequeños negocios y emprendedores.
+Portfolio personal de Bryan Neculfilo, desarrollador web y coach de parkour.
 
-## 🎯 Propósito
+## 🚀 Tecnologías
 
-Este sitio web está diseñado para:
-- **Vender landing pages de alta conversión** para pequeños negocios
-- Mostrar el valor de soluciones simples y efectivas
-- Conectar la disciplina del parkour con el desarrollo web
-- Generar leads y conversiones
+- **React 18** - Framework de UI
+- **TypeScript** - Tipado estático
+- **Vite** - Build tool y dev server
+- **Tailwind CSS** - Estilos
+- **React Router** - Navegación
+- **i18next** - Internacionalización (ES/EN)
+- **EmailJS** - Envío de emails
+- **Google Apps Script** - Integración con Google Calendar
 
-## ✨ Características
-
-- 🌐 **Bilingüe**: Inglés y Español con toggle de idioma
-- 📱 **Totalmente responsive**: Diseño adaptativo para todos los dispositivos
-- ⚡ **Rápido**: Construido con Vite para máximo rendimiento
-- 🎨 **Moderno y minimalista**: Diseño profesional orientado a conversión
-- 💬 **Integración WhatsApp**: Botón directo para contacto
-- 🏃 **Brand positioning**: Combina disciplina atlética con desarrollo web
-
-## 🏗️ Estructura del Sitio
-
-1. **Hero Section** - Propuesta de valor principal: "Landing Pages de Alta Conversión"
-2. **Services** - Landing Page Express con 6 características clave
-3. **Why Work With Me** - Mentalidad de atleta aplicada al desarrollo
-4. **Parkour** - Sección secundaria de credibilidad (logros y background)
-5. **Contact** - Formulario + botón WhatsApp
-
-## 🚀 Instalación y Uso
-
-### Desarrollo
+## 📦 Instalación
 
 ```bash
+# Instalar dependencias
 npm install
+
+# Ejecutar en desarrollo
 npm run dev
-```
 
-Abre [http://localhost:3000](http://localhost:3000) en tu navegador.
-
-### Producción
-
-```bash
+# Build para producción
 npm run build
+
+# Preview del build
 npm run preview
 ```
 
-## 📝 Configuración
+## 🌐 Despliegue en GitHub Pages
 
-### WhatsApp
+El proyecto está configurado para desplegarse automáticamente en GitHub Pages usando GitHub Actions.
 
-Edita `src/components/Contact.tsx` y actualiza el número de WhatsApp:
+### Configuración Inicial
 
-```typescript
-const whatsappNumber = '56912345678'; // Tu número aquí
+1. **Actualizar el nombre del repositorio** (si es diferente a `bryanpkfr`):
+   - Edita `vite.config.ts` y cambia `base: '/bryanpkfr/'` por tu nombre de repo
+   - Edita `.github/workflows/deploy.yml` y actualiza los comentarios si es necesario
+   - Edita `public/404.html` y cambia `var repoName = 'bryanpkfr';`
+
+2. **Subir el código a GitHub**:
+   ```bash
+   git init
+   git add .
+   git commit -m "Initial commit"
+   git branch -M main
+   git remote add origin https://github.com/TU_USUARIO/bryanpkfr.git
+   git push -u origin main
+   ```
+
+3. **Configurar GitHub Pages**:
+   - Ve a tu repositorio en GitHub
+   - Settings > Pages
+   - Source: GitHub Actions
+   - Guarda
+
+4. **El despliegue comenzará automáticamente**
+
+### Variables de Entorno
+
+Para producción, configura los secrets en GitHub:
+- Settings > Secrets and variables > Actions
+- Agrega los secrets necesarios (ver `.github/workflows/deploy.yml`)
+
+**Variables necesarias:**
+- `VITE_EMAILJS_SERVICE_ID`
+- `VITE_EMAILJS_TEMPLATE_ID`
+- `VITE_EMAILJS_CONFIRMATION_TEMPLATE_ID`
+- `VITE_EMAILJS_PUBLIC_KEY`
+- `VITE_GOOGLE_APPS_SCRIPT_URL`
+
+## 📁 Estructura del Proyecto
+
+```
+├── public/
+│   ├── images/          # Imágenes estáticas
+│   ├── videos/          # Videos
+│   └── 404.html         # Redirección para GitHub Pages
+├── src/
+│   ├── components/      # Componentes reutilizables
+│   ├── pages/          # Páginas principales
+│   ├── locales/       # Traducciones (i18n)
+│   └── assets/         # Assets del proyecto
+├── .github/
+│   └── workflows/
+│       └── deploy.yml   # Workflow de GitHub Actions
+└── vite.config.ts      # Configuración de Vite
 ```
 
-Formato: código país + número (sin + ni espacios)
-- Ejemplo Chile: `56912345678` (56 = código país, 9 = móvil, resto = número)
+## 🎨 Páginas
 
-### Contenido
+- `/` - Página principal (Home)
+- `/web` - Desarrollo Web (En construcción)
+- `/parkour` - Parkour Coach (En construcción)
+- `/landing-ads` - Landing Page para anuncios
+- `/contact` - Página de contacto
+- `/video` - Página de video
 
-Edita los archivos de traducción:
-- `src/locales/es.json` - Contenido en español
-- `src/locales/en.json` - Contenido en inglés
+## 📝 Notas
 
-## 🎨 Personalización
-
-### Colores
-
-Modifica `tailwind.config.js` para cambiar la paleta de colores:
-
-```javascript
-colors: {
-  primary: {
-    // Tus colores aquí
-  }
-}
-```
-
-### Estilos
-
-- `src/index.css` - Estilos globales
-- `tailwind.config.js` - Configuración de Tailwind
-
-## 📦 Tecnologías
-
-- **Vite** - Build tool ultra-rápido
-- **React 18** - Biblioteca UI
-- **TypeScript** - Tipado estático
-- **Tailwind CSS** - Estilos utility-first
-- **React Router** - Routing
-- **react-i18next** - Internacionalización
-
-## 🚢 Despliegue
-
-Puedes desplegar en:
-- [Vercel](https://vercel.com) (recomendado)
-- [Netlify](https://netlify.com)
-- [GitHub Pages](https://pages.github.com)
-- Cualquier hosting estático
+- Las imágenes deben estar en `public/images/`
+- Los videos deben estar en `public/videos/`
+- El proyecto usa React Router con rutas del lado del cliente
+- GitHub Pages está configurado para manejar las rutas correctamente
 
 ## 📄 Licencia
 
-Todos los derechos reservados © Bryan Neculfilo
+Este proyecto es privado.
 
 ---
 
-**Enfoque**: Este sitio está diseñado como una herramienta de conversión, no como un portfolio. El parkour sirve como elemento de credibilidad, pero el foco principal está en los servicios de landing pages.
+Desarrollado con ❤️ por Bryan Neculfilo

@@ -10,16 +10,20 @@
     "lint": "echo 'Linting skipped - configure ESLint if needed'"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "date-fns": "^4.1.0",
     "i18next": "^23.15.1",
     "i18next-browser-languagedetector": "^8.0.0",
     "object-hash": "^3.0.0",
     "react": "^18.3.1",
+    "react-datepicker": "^9.1.0",
     "react-dom": "^18.3.1",
     "react-i18next": "^15.1.1",
     "react-router-dom": "^6.26.0"
   },
   "devDependencies": {
     "@types/react": "^18.3.5",
+    "@types/react-datepicker": "^7.0.0",
     "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react": "^4.3.1",
     "autoprefixer": "^10.4.20",

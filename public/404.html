@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redirecting...</title>
+    <script>
+      // GitHub Pages redirige a index.html para manejar rutas de React Router
+      // IMPORTANTE: Si cambias el nombre del repositorio, actualiza 'bryanpkfr' aquí también
+      var repoName = 'bryanpkfr';
+      var path = window.location.pathname;
+      var search = window.location.search;
+      var hash = window.location.hash;
+      
+      // Remover el nombre del repo de la ruta si está presente
+      var cleanPath = path.replace('/' + repoName, '');
+      if (!cleanPath.startsWith('/')) {
+        cleanPath = '/' + cleanPath;
+      }
+      
+      // Construir la nueva ruta
+      var newPath = '/' + repoName + '/index.html' + cleanPath + search + hash;
+      window.location.replace(newPath);
+    </script>
+  </head>
+  <body>
+    <p>Redirecting...</p>
+  </body>
+</html>
+

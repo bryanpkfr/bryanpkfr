@@ -1,36 +1,30 @@
 import { useTranslation } from 'react-i18next';
-import { Link, useParams, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
 export default function Navigation() {
   const { t, i18n } = useTranslation();
-  const { locale } = useParams<{ locale: string }>();
-  const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState(false);
 
-  const currentLocale = locale || i18n.language;
-
   const toggleLocale = () => {
-    const newLocale = currentLocale === 'es' ? 'en' : 'es';
-    const currentPath = window.location.pathname;
-    const pathWithoutLocale = currentPath.replace(/^\/(en|es)/, '') || '/';
-    navigate(`/${newLocale}${pathWithoutLocale}`);
+    const newLocale = i18n.language === 'es' ? 'en' : 'es';
     i18n.changeLanguage(newLocale);
+    localStorage.setItem('language', newLocale);
   };
 
   const navItems = [
-    { key: 'home', href: `/${currentLocale}` },
-    { key: 'web', href: `/${currentLocale}/web` },
-    { key: 'parkour', href: `/${currentLocale}/parkour` },
-    { key: 'video', href: `/${currentLocale}/video` },
-    { key: 'contact', href: `/${currentLocale}/contact` },
+    { key: 'home', href: '/' },
+    { key: 'web', href: '/web' },
+    { key: 'parkour', href: '/parkour' },
+    { key: 'video', href: '/video' },
+    { key: 'contact', href: '/contact' },
   ];
 
   return (
     <nav className="fixed top-0 w-full bg-white/95 dark:bg-gray-900/95 backdrop-blur-md z-50 shadow-sm border-b border-gray-200 dark:border-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <Link to={`/${currentLocale}`} className="text-xl font-bold text-gray-900 dark:text-white">
+          <Link to="/" className="text-xl font-bold text-gray-900 dark:text-white">
             Bryan Neculfilo
           </Link>
 
@@ -50,7 +44,7 @@ export default function Navigation() {
               onClick={toggleLocale}
               className="px-3 py-1 rounded-md bg-primary-100 dark:bg-primary-900 text-primary-700 dark:text-primary-300 hover:bg-primary-200 dark:hover:bg-primary-800 transition-colors font-medium"
             >
-              {currentLocale === 'es' ? 'EN' : 'ES'}
+              {i18n.language === 'es' ? 'EN' : 'ES'}
             </button>
           </div>
 
@@ -95,7 +89,7 @@ export default function Navigation() {
               onClick={toggleLocale}
               className="block w-full text-left px-3 py-2 rounded-md bg-primary-100 dark:bg-primary-900 text-primary-700 dark:text-primary-300 font-medium"
             >
-              {currentLocale === 'es' ? 'English' : 'Español'}
+              {i18n.language === 'es' ? 'English' : 'Español'}
             </button>
           </div>
         )}

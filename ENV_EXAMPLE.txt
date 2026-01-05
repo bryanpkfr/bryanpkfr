@@ -1,0 +1,13 @@
+# Copia este archivo como .env y completa con tus credenciales
+
+# EmailJS Configuration
+# Obtén estas credenciales en https://www.emailjs.com/
+VITE_EMAILJS_SERVICE_ID=service_xxxxx
+VITE_EMAILJS_TEMPLATE_ID=template_xxxxx
+VITE_EMAILJS_CONFIRMATION_TEMPLATE_ID=template_xxxxx
+VITE_EMAILJS_PUBLIC_KEY=xxxxxxxxxxxxx
+
+# Google Apps Script URL
+# Obtén esta URL después de desplegar el script en Google Apps Script
+VITE_GOOGLE_APPS_SCRIPT_URL=https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec
+
