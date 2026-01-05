@@ -33,13 +33,13 @@ jobs:
 
       - name: Build
         run: npm run build
-        env:
-          # Agrega aquí tus variables de entorno si las necesitas
-          # VITE_EMAILJS_SERVICE_ID: ${{ secrets.VITE_EMAILJS_SERVICE_ID }}
-          # VITE_EMAILJS_TEMPLATE_ID: ${{ secrets.VITE_EMAILJS_TEMPLATE_ID }}
-          # VITE_EMAILJS_PUBLIC_KEY: ${{ secrets.VITE_EMAILJS_PUBLIC_KEY }}
-          # VITE_EMAILJS_CONFIRMATION_TEMPLATE_ID: ${{ secrets.VITE_EMAILJS_CONFIRMATION_TEMPLATE_ID }}
-          # VITE_GOOGLE_APPS_SCRIPT_URL: ${{ secrets.VITE_GOOGLE_APPS_SCRIPT_URL }}
+        # Para agregar variables de entorno, descomenta y agrega:
+        # env:
+        #   VITE_EMAILJS_SERVICE_ID: ${{ secrets.VITE_EMAILJS_SERVICE_ID }}
+        #   VITE_EMAILJS_TEMPLATE_ID: ${{ secrets.VITE_EMAILJS_TEMPLATE_ID }}
+        #   VITE_EMAILJS_PUBLIC_KEY: ${{ secrets.VITE_EMAILJS_PUBLIC_KEY }}
+        #   VITE_EMAILJS_CONFIRMATION_TEMPLATE_ID: ${{ secrets.VITE_EMAILJS_CONFIRMATION_TEMPLATE_ID }}
+        #   VITE_GOOGLE_APPS_SCRIPT_URL: ${{ secrets.VITE_GOOGLE_APPS_SCRIPT_URL }}
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
