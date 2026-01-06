@@ -31,7 +31,7 @@ export default function HomePage() {
           <div 
             className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-60 group-hover:opacity-70 transition-opacity"
             style={{
-              backgroundImage: 'url(/images/devneon.webp)',
+              backgroundImage: `url(${import.meta.env.BASE_URL}images/devneon.webp)`,
             }}
           />
           
@@ -62,7 +62,7 @@ export default function HomePage() {
           <div 
             className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-60 group-hover:opacity-70 transition-opacity"
             style={{
-              backgroundImage: 'url(/images/parkour.webp)',
+              backgroundImage: `url(${import.meta.env.BASE_URL}images/parkour.webp)`,
             }}
           />
           
