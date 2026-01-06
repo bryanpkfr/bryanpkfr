@@ -5,22 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Redirecting...</title>
     <script>
-      // GitHub Pages redirige a index.html para manejar rutas de React Router
-      // IMPORTANTE: Si cambias el nombre del repositorio, actualiza 'bryanpkfr' aquí también
+      // GitHub Pages: Redirigir a index.html para que React Router maneje las rutas
       var repoName = 'bryanpkfr';
       var path = window.location.pathname;
       var search = window.location.search;
       var hash = window.location.hash;
       
-      // Remover el nombre del repo de la ruta si está presente
-      var cleanPath = path.replace('/' + repoName, '');
-      if (!cleanPath.startsWith('/')) {
-        cleanPath = '/' + cleanPath;
+      // Prevenir bucle infinito: verificar si ya estamos en index.html
+      if (path.includes('/index.html')) {
+        // Ya estamos en index.html, no redirigir
+        return;
       }
       
-      // Construir la nueva ruta
-      var newPath = '/' + repoName + '/index.html' + cleanPath + search + hash;
-      window.location.replace(newPath);
+      // Extraer la ruta relativa al repositorio
+      var repoPath = '/' + repoName;
+      var relativePath = path;
+      
+      if (path.startsWith(repoPath)) {
+        relativePath = path.substring(repoPath.length);
+      }
+      
+      // Asegurar que empiece con /
+      if (relativePath === '' || relativePath === '/') {
+        relativePath = '/';
+      } else if (!relativePath.startsWith('/')) {
+        relativePath = '/' + relativePath;
+      }
+      
+      // Redirigir a index.html (React Router con basename manejará la ruta)
+      var targetUrl = repoPath + '/index.html' + relativePath + search + hash;
+      
+      // Solo redirigir si es diferente a la URL actual
+      if (targetUrl !== window.location.pathname + search + hash) {
+        window.location.replace(targetUrl);
+      }
     </script>
   </head>
   <body>

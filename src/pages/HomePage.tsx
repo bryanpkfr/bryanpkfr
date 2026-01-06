@@ -15,14 +15,18 @@ export default function HomePage() {
 
   const isSpanish = i18n.language === 'es';
 
+  // Construir la ruta base correctamente
+  const baseUrl = import.meta.env.BASE_URL || '/';
+  const imageBase = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
+
   return (
-    <section className="relative min-h-screen w-full overflow-hidden">
+    <section className="relative min-h-screen w-full overflow-hidden bg-gray-900">
       {/* Contenedor principal - rectángulo completo */}
       <div className="relative w-full h-screen">
         {/* Triángulo inferior izquierdo - Desarrollo Web (diagonal de abajo izquierda a arriba derecha) */}
         <button
           onClick={handleWebClick}
-          className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-gray-900 via-gray-800 to-primary-900 hover:opacity-95 transition-opacity duration-300 cursor-pointer group overflow-hidden"
+          className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-gray-900 via-gray-800 to-primary-900 hover:opacity-95 transition-opacity duration-300 cursor-pointer group overflow-hidden z-10"
           style={{
             clipPath: 'polygon(0 0, 0 100%, 100% 0)',
           }}
@@ -31,12 +35,12 @@ export default function HomePage() {
           <div 
             className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-60 group-hover:opacity-70 transition-opacity"
             style={{
-              backgroundImage: `url(${import.meta.env.BASE_URL}images/devneon.webp)`,
+              backgroundImage: `url(${imageBase}images/devneon.webp)`,
             }}
           />
           
           {/* Overlay oscuro para mejor legibilidad del texto */}
-          <div className="absolute inset-0 bg-gradient-to-br from-gray-900/70 via-gray-800/60 to-primary-900/70"></div>
+          <div className="absolute inset-0 bg-gradient-to-br from-gray-900/70 via-gray-800/60 to-primary-900/70 z-0"></div>
           
           <div className="absolute inset-0 flex flex-col items-start justify-center pl-8 md:pl-16 text-white z-10">
             <div className="transform -rotate-90 origin-left mb-8">
@@ -47,13 +51,13 @@ export default function HomePage() {
             </div>
           </div>
           {/* Overlay para hover */}
-          <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors"></div>
+          <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors z-20"></div>
         </button>
 
         {/* Triángulo superior derecho - Parkour Coach (diagonal de abajo izquierda a arriba derecha) */}
         <button
           onClick={handleParkourClick}
-          className="absolute top-0 right-0 w-full h-full bg-gradient-to-bl from-primary-900 via-primary-800 to-gray-900 hover:opacity-95 transition-opacity duration-300 cursor-pointer group overflow-hidden"
+          className="absolute top-0 right-0 w-full h-full bg-gradient-to-bl from-primary-900 via-primary-800 to-gray-900 hover:opacity-95 transition-opacity duration-300 cursor-pointer group overflow-hidden z-10"
           style={{
             clipPath: 'polygon(0 100%, 100% 0, 100% 100%)',
           }}
@@ -62,12 +66,12 @@ export default function HomePage() {
           <div 
             className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-60 group-hover:opacity-70 transition-opacity"
             style={{
-              backgroundImage: `url(${import.meta.env.BASE_URL}images/parkour.webp)`,
+              backgroundImage: `url(${imageBase}images/parkour.webp)`,
             }}
           />
           
           {/* Overlay oscuro para mejor legibilidad del texto */}
-          <div className="absolute inset-0 bg-gradient-to-bl from-primary-900/70 via-primary-800/60 to-gray-900/70"></div>
+          <div className="absolute inset-0 bg-gradient-to-bl from-primary-900/70 via-primary-800/60 to-gray-900/70 z-0"></div>
           
           <div className="absolute inset-0 flex flex-col items-end justify-center pr-8 md:pr-16 text-white z-10">
             <div className="transform rotate-90 origin-right mb-8">
@@ -78,7 +82,7 @@ export default function HomePage() {
             </div>
           </div>
           {/* Overlay para hover */}
-          <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors"></div>
+          <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors z-20"></div>
         </button>
       </div>
 

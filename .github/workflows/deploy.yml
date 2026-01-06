@@ -41,6 +41,9 @@ jobs:
         #   VITE_EMAILJS_CONFIRMATION_TEMPLATE_ID: ${{ secrets.VITE_EMAILJS_CONFIRMATION_TEMPLATE_ID }}
         #   VITE_GOOGLE_APPS_SCRIPT_URL: ${{ secrets.VITE_GOOGLE_APPS_SCRIPT_URL }}
 
+      - name: Copy index.html to 404.html
+        run: cp dist/index.html dist/404.html
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
