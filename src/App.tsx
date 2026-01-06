@@ -13,8 +13,11 @@ import LandingAdsPage from './pages/LandingAdsPage';
 function AppContent() {
   const location = useLocation();
   const { i18n } = useTranslation();
-  const isHomePage = location.pathname === '/';
-  const isLandingAds = location.pathname === '/landing-ads';
+  // Normalizar el pathname removiendo el base path si está presente
+  const basePath = import.meta.env.BASE_URL || '/';
+  const normalizedPath = location.pathname.replace(basePath, '/') || '/';
+  const isHomePage = normalizedPath === '/';
+  const isLandingAds = normalizedPath === '/landing-ads';
 
   // Detectar idioma del navegador o usar el guardado
   useEffect(() => {
@@ -43,8 +46,14 @@ function AppContent() {
 }
 
 function App() {
+  // Obtener el base path de Vite (será '/bryanpkfr/' en producción)
+  const basePath = import.meta.env.BASE_URL || '/';
+  
   return (
-    <Router future={{ v7_relativeSplatPath: true, v7_startTransition: true }}>
+    <Router 
+      basename={basePath}
+      future={{ v7_relativeSplatPath: true, v7_startTransition: true }}
+    >
       <AppContent />
     </Router>
   );
