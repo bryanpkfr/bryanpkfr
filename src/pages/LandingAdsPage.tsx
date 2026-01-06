@@ -81,8 +81,8 @@ export default function LandingAdsPage() {
             playsInline
             className="w-full h-full object-cover"
           >
-            <source src="/videos/gota-agua.mp4" type="video/mp4" />
-            <source src="/videos/gota-agua.webm" type="video/webm" />
+            <source src={`${import.meta.env.BASE_URL}videos/gota-agua.mp4`} type="video/mp4" />
+            <source src={`${import.meta.env.BASE_URL}videos/gota-agua.webm`} type="video/webm" />
             {/* Fallback si el video no carga */}
           </video>
           {/* Overlay con degradado para mejorar legibilidad del texto */}
