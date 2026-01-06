@@ -361,25 +361,41 @@ export default function LandingAdsPage() {
             </p>
             
             <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-gray-900 rounded-xl p-8 border border-gray-700">
-                <h3 className="text-2xl font-bold mb-4">OpenGarage</h3>
+              <a 
+                href="https://www.opengarage.cl" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="bg-gray-900 rounded-xl p-8 border border-gray-700 hover:border-primary-500/50 hover:shadow-lg hover:shadow-primary-500/20 transition-all cursor-pointer group"
+              >
+                <h3 className="text-2xl font-bold mb-4 group-hover:text-primary-400 transition-colors">OpenGarage</h3>
                 <p className="text-gray-300 mb-4">
                   Landing page optimizada para captar leads calificados en el sector automotriz.
                 </p>
                 <p className="text-sm text-gray-400">
                   Proyecto real, funcional y en producción.
                 </p>
-              </div>
+                <p className="text-sm text-primary-400 mt-4 font-semibold">
+                  Ver sitio web →
+                </p>
+              </a>
               
-              <div className="bg-gray-900 rounded-xl p-8 border border-gray-700">
-                <h3 className="text-2xl font-bold mb-4">AVEX Movement</h3>
+              <a 
+                href="https://www.avexmov.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="bg-gray-900 rounded-xl p-8 border border-gray-700 hover:border-primary-500/50 hover:shadow-lg hover:shadow-primary-500/20 transition-all cursor-pointer group"
+              >
+                <h3 className="text-2xl font-bold mb-4 group-hover:text-primary-400 transition-colors">AVEX Movement</h3>
                 <p className="text-gray-300 mb-4">
                   Landing page estratégica para convertir visitantes en clientes potenciales.
                 </p>
                 <p className="text-sm text-gray-400">
                   Proyecto real, funcional y en producción.
                 </p>
-              </div>
+                <p className="text-sm text-primary-400 mt-4 font-semibold">
+                  Ver sitio web →
+                </p>
+              </a>
             </div>
           </div>
         </div>
