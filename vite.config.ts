@@ -8,7 +8,7 @@ export default defineConfig({
   // Base path para GitHub Pages (solo en producción)
   // En desarrollo usa '/' para que funcione en localhost:3000
   // En producción (build) usa '/bryanpkfr/' para GitHub Pages
-  base: process.env.NODE_ENV === 'production' ? '/bryanpkfr/' : '/',
+  base: process.env.NODE_ENV === 'production' || process.env.CI ? '/bryanpkfr/' : '/',
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),

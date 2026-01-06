@@ -33,16 +33,18 @@ jobs:
 
       - name: Build
         run: npm run build
-        # Para agregar variables de entorno, descomenta y agrega:
-        # env:
-        #   VITE_EMAILJS_SERVICE_ID: ${{ secrets.VITE_EMAILJS_SERVICE_ID }}
-        #   VITE_EMAILJS_TEMPLATE_ID: ${{ secrets.VITE_EMAILJS_TEMPLATE_ID }}
-        #   VITE_EMAILJS_PUBLIC_KEY: ${{ secrets.VITE_EMAILJS_PUBLIC_KEY }}
-        #   VITE_EMAILJS_CONFIRMATION_TEMPLATE_ID: ${{ secrets.VITE_EMAILJS_CONFIRMATION_TEMPLATE_ID }}
-        #   VITE_GOOGLE_APPS_SCRIPT_URL: ${{ secrets.VITE_GOOGLE_APPS_SCRIPT_URL }}
+        env:
+          NODE_ENV: production
+          # Para agregar variables de entorno, descomenta y agrega:
+          # VITE_EMAILJS_SERVICE_ID: ${{ secrets.VITE_EMAILJS_SERVICE_ID }}
+          # VITE_EMAILJS_TEMPLATE_ID: ${{ secrets.VITE_EMAILJS_TEMPLATE_ID }}
+          # VITE_EMAILJS_PUBLIC_KEY: ${{ secrets.VITE_EMAILJS_PUBLIC_KEY }}
+          # VITE_EMAILJS_CONFIRMATION_TEMPLATE_ID: ${{ secrets.VITE_EMAILJS_CONFIRMATION_TEMPLATE_ID }}
+          # VITE_GOOGLE_APPS_SCRIPT_URL: ${{ secrets.VITE_GOOGLE_APPS_SCRIPT_URL }}
 
       - name: Copy index.html to 404.html
         run: cp dist/index.html dist/404.html
+        working-directory: .
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
