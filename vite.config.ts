@@ -5,9 +5,10 @@ import path from 'path';
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  // Base path para GitHub Pages
-  // Si tu repositorio se llama diferente a 'bryanpkfr', cambia esto
-  base: '/bryanpkfr/',
+  // Base path para GitHub Pages (solo en producción)
+  // En desarrollo usa '/' para que funcione en localhost:3000
+  // En producción (build) usa '/bryanpkfr/' para GitHub Pages
+  base: process.env.NODE_ENV === 'production' ? '/bryanpkfr/' : '/',
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
